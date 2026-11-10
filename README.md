@@ -1,14 +1,9 @@
-# Ilya Ovsyannikov
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/profile-dark.png">
+  <img alt="Ilya Ovsyannikov: Forward Deployed Engineer, Solutions Architect, Applied AI. How I work with a customer, current FDE engagement, client delivery 2022-2026, what I bring, platforms." src="assets/profile-light.png">
+</picture>
 
-**Forward Deployed Engineer · Solutions Architect · Applied AI**. I design and ship agentic AI systems inside enterprise environments, on GCP and AWS.
-
-I embed with a business team, find the use case worth building, design it with the stakeholders, and take it to production. The path runs from discovery and data access through architecture, security review and deployment to handover. I'm currently the acting lead Forward Deployed Engineer in TELUS Digital's AI Accelerator FDE program, embedded with the Marketing business unit. Before that, I spent four years delivering LLM assistants, agentic microservices and evaluation platforms for enterprise clients in media, energy, satellite radio and ed-tech.
-
-What I bring to a customer engagement:
-- **Discovery and solution design:** turning a vague mandate into one owned use case, then into a design leadership approves.
-- **Agentic architecture:** LangGraph state graphs, Google ADK agents and tools, A2A, RAG and guardrails. Where a decision must be auditable, rules decide and the LLM explains.
-- **Production delivery:** FastAPI microservices on Cloud Run and GKE, IAM and identity-aware access, privacy by design, Terraform and CI/CD.
-- **Evaluation:** ground-truth test suites, precision/recall harnesses and LLM-as-judge, so a model choice rests on numbers.
+I embed with business teams and take agentic AI from discovery to a production system they own. Currently acting lead Forward Deployed Engineer in TELUS Digital's AI Accelerator FDE program.
 
 ## Featured projects
 

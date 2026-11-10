@@ -1,0 +1,96 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Profile card</title>
+<style>
+:root{--navy:#1F3A5F;--navy2:#2E5E8C;--navy3:#7FA7CF;--teal:#128a7d;--tealbg:#dbf3ef;--amber:#B06A00;--amberbg:#fbeede;
+--green:#3c6b00;--greenbg:#eaf6d8;--blue:#1f6fb2;--bluebg:#e4eff9;--red:#c0392b;--redbg:#fbe6e3;--lav:#f3eefa;
+--ink:#2A2432;--muted:#6b6675;--line:#e2ddec;--card:#fff;--bg:#f4f1f8;--chip:#fff}
+.dark{--ink:#e6e8ee;--muted:#9aa3b2;--line:#2c3442;--card:#161b22;--bg:#0d1117;--chip:#1c2330;
+--tealbg:#10302c;--amberbg:#33260f;--greenbg:#1d2e12;--bluebg:#13263a;--redbg:#3a1c1a;--lav:#1d2233;
+--teal:#4fd1bf;--amber:#f0b45a;--green:#9bd36b;--blue:#79b8ff;--navy:#9cc3ec;--navy2:#79a8d8;--navy3:#3f5f86}
+*{box-sizing:border-box}
+body{margin:0;width:1000px;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:var(--bg);padding:16px;-webkit-font-smoothing:antialiased}
+.page{background:var(--card);border-radius:14px;box-shadow:0 8px 30px rgba(31,58,95,.12);padding:22px 26px 20px;border:1px solid var(--line)}
+.brand{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--navy2);font-weight:700}
+h1{font-size:24px;margin:4px 0 3px;color:var(--navy)}
+.cap{font-size:12.5px;color:var(--muted);line-height:1.5;margin:0}
+h2{font-size:11px;text-transform:uppercase;letter-spacing:.09em;color:var(--navy2);margin:18px 0 9px}
+.phases{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+.ph{border-radius:10px;padding:9px 10px;font-size:10.5px;line-height:1.4;border:1px solid var(--line);background:var(--chip);position:relative}
+.ph .k{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;border-radius:50%;background:var(--navy);color:var(--card);font-size:9px;font-weight:800;margin-right:5px}
+.ph .n{font-size:11.5px;font-weight:700;margin-bottom:3px;display:flex;align-items:center}
+.ph .d{color:var(--muted)}
+.ph:not(:last-child)::after{content:"→";position:absolute;right:-8px;top:40%;color:var(--navy3);font-size:12px}
+.grid{display:grid;grid-template-columns:1.05fr 1fr;gap:12px}
+.zone{border-radius:12px;padding:10px 12px 12px}
+.zt{font-size:9.5px;text-transform:uppercase;letter-spacing:.07em;font-weight:800;margin-bottom:2px}
+.zs{font-size:10px;color:var(--muted);margin-bottom:6px;line-height:1.35}
+.z-now{background:var(--lav);border:2px solid var(--navy3)} .z-now .zt{color:var(--navy)}
+.z-before{background:var(--tealbg);border:1px solid rgba(18,138,125,.25)} .z-before .zt{color:var(--teal)}
+.box{background:var(--card);border:1px solid var(--line);border-radius:9px;padding:7px 9px;margin-top:7px;font-size:10.5px;line-height:1.4}
+.box .bt{font-size:8.5px;text-transform:uppercase;letter-spacing:.05em;font-weight:800;color:var(--muted);margin-bottom:1px}
+.box .bn{font-size:11.5px;font-weight:700;margin-bottom:2px}
+.core{background:linear-gradient(135deg,#1F3A5F,#2E5E8C);color:#fff;border:none}
+.core .bt{color:#c9dbef} .core .bn{color:#fff}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.tag{display:inline-block;font-size:8.5px;font-weight:800;border-radius:20px;padding:1px 7px;margin-left:4px;background:var(--greenbg);color:var(--green)}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.panel{border-radius:10px;padding:10px 12px;font-size:10.5px;line-height:1.45}
+.panel h3{margin:0 0 4px;font-size:10px;text-transform:uppercase;letter-spacing:.07em}
+.p1{background:var(--amberbg)} .p1 h3{color:var(--amber)}
+.p2{background:var(--bluebg)} .p2 h3{color:var(--blue)}
+.p3{background:var(--greenbg)} .p3 h3{color:var(--green)}
+.p4{background:var(--redbg)} .p4 h3{color:var(--red)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:10.5px;background:var(--chip);border:1px solid var(--line);border-radius:20px;padding:3px 10px}
+.chip b{color:var(--navy)}
+.foot{font-size:10px;color:var(--muted);margin-top:12px;display:flex;justify-content:space-between}
+</style></head><body><div class="page">
+<div class="brand">Forward Deployed Engineer · Solutions Architect · Applied AI</div>
+<h1>Ilya Ovsyannikov</h1>
+<p class="cap">I embed with business teams and take agentic AI from a vague mandate to a production system they own, on GCP and AWS.</p>
+
+<h2>How I work with a customer</h2>
+<div class="phases">
+ <div class="ph"><div class="n"><span class="k">1</span>Discover</div><div class="d">Backlog triage, one owned use case, data access across owners</div></div>
+ <div class="ph"><div class="n"><span class="k">2</span>Design</div><div class="d">Plain-language proposal, architecture, leadership approval</div></div>
+ <div class="ph"><div class="n"><span class="k">3</span>Build</div><div class="d">Agents, tools, rules engines, APIs, ground-truth tests</div></div>
+ <div class="ph"><div class="n"><span class="k">4</span>Secure</div><div class="d">Identity, isolation, privacy by design, injection hardening</div></div>
+ <div class="ph"><div class="n"><span class="k">5</span>Ship</div><div class="d">Cloud Run / GKE, IAM, Terraform, CI/CD, monitoring</div></div>
+ <div class="ph"><div class="n"><span class="k">6</span>Hand over</div><div class="d">Editable config, docs, demos, the client's team owns it</div></div>
+</div>
+
+<div class="grid" style="margin-top:14px">
+ <div class="zone z-now"><div class="zt">Now · Sep 2026 –</div><div class="zs">Acting lead FDE, TELUS Digital AI Accelerator FDE program · embedded with Marketing</div>
+  <div class="box core"><div class="bt">Website-visitor lead check</div><div class="bn">Rules decide, Gemini explains</div>~3,000 visitors a week → a short, explainable shortlist across 127+ key accounts, with a reason and next step for each lead.</div>
+  <div class="row2">
+   <div class="box"><div class="bt">Delivery</div><div class="bn">Beta on schedule <span class="tag">live</span></div>Use case to approved design to MVP in ~1 month</div>
+   <div class="box"><div class="bt">Trust</div><div class="bn">Security review first</div>Per-user isolation (IAP), memory-only personal data</div>
+  </div>
+  <div class="box"><div class="bt">Next</div><div class="bn">Pilot Nov 20 · full version and handover Dec 11</div>Gemini Enterprise import, weekly run, Marketing's own projects via Terraform</div>
+  <div class="box"><div class="bt">Stack</div>Google ADK · Gemini on Vertex AI · Cloud Run · IAP · Gemini Enterprise (A2A) · Terraform</div>
+ </div>
+ <div class="zone z-before"><div class="zt">Client delivery · 2022 – 2026</div><div class="zs">LLM applications, assistants and agentic microservices inside enterprise client environments</div>
+  <div class="box"><div class="bt">Media publisher</div><div class="bn">Multi-brand AI assistant</div>10-node LangGraph agent, guardrails, grounded RAG · 304 tests, 95% coverage</div>
+  <div class="box"><div class="bt">Energy / pipelines</div><div class="bn">Multi-agent support platform</div>Google ADK orchestrator, BigQuery vector RAG, Document AI</div>
+  <div class="box"><div class="bt">Satellite radio</div><div class="bn">Email QA at scale</div>40k+ emails, 15 issue types, 92–96% accuracy on Bedrock</div>
+  <div class="box"><div class="bt">Ed-tech</div><div class="bn">LLM evaluation platform</div>GPT-4.1 vs Gemini, 8 metrics over 1,000+ lessons</div>
+ </div>
+</div>
+
+<h2>What I bring</h2>
+<div class="cards">
+ <div class="panel p1"><h3>Solution design</h3>From an ambiguous ask to one use case with a success measure and a design leadership signs off.</div>
+ <div class="panel p2"><h3>Agentic architecture</h3>LangGraph, Google ADK, A2A, RAG, guardrails; rules where decisions must be auditable.</div>
+ <div class="panel p3"><h3>Production delivery</h3>FastAPI microservices, Cloud Run / GKE, IAM, Terraform, CI/CD, observability.</div>
+ <div class="panel p4"><h3>Evaluation</h3>Ground-truth suites, precision / recall harnesses, LLM-as-judge: model choices backed by numbers.</div>
+</div>
+
+<h2>Platforms</h2>
+<div class="chips">
+ <span class="chip"><b>GCP</b> Vertex AI · Cloud Run · GKE · BigQuery</span><span class="chip"><b>AWS</b> Bedrock · S3 · DynamoDB</span>
+ <span class="chip"><b>Google</b> ADK · Gemini Enterprise · Agent Engine</span><span class="chip"><b>Salesforce</b> Agentforce · Data 360</span>
+ <span class="chip"><b>Models</b> Gemini · Claude · GPT</span><span class="chip"><b>Infra</b> Terraform · Docker · Kubernetes</span>
+</div>
+<div class="foot"><span>7+ years cloud ML / AI · 3+ years GenAI · MSc, two IEEE publications</span><span>github.com/ovsilya · linkedin.com/in/ovsilya</span></div>
+</div>
+<script>if(location.search.includes("dark"))document.documentElement.classList.add("dark");window.onload=()=>document.body.setAttribute("data-h",document.documentElement.scrollHeight)</script>
+</body></html>
