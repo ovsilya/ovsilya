@@ -33,12 +33,35 @@ What I bring to a customer engagement:
 
 ## Toolbox
 
-**Agents and LLMs:** Google ADK (agents, tools, plugins, A2A) · LangGraph · LangChain · Gemini (Vertex AI) · Claude (Bedrock) · OpenAI · LiteLLM gateway · RAG · guardrails · prompt engineering · LLM evaluation (ground truth, precision/recall, LLM-as-judge)
-**Enterprise agent platforms:** Gemini Enterprise · Vertex AI Agent Engine · Salesforce Agentforce (Agent Builder, Prompt Builder, Flow / Apex actions, Data 360, Einstein Trust Layer, Testing Center)
-**Cloud and architecture:** GCP (Cloud Run, GKE, Vertex AI, BigQuery, Document AI, IAP, IAM, Cloud Build, Artifact Registry) · AWS (Bedrock, S3, DynamoDB, SageMaker) · hub-and-spoke projects · Terraform · CI/CD · Workload Identity Federation
-**Engineering:** Python · FastAPI · Docker · Kubernetes · pytest · pandas · Redis / Valkey · DynamoDB · Datadog · Sentry · OpenTelemetry
-**Security and data governance:** identity-aware access (signed JWTs) · least-privilege service accounts · prompt-injection hardening · privacy by design · data-enablement reviews
-**Delivery:** discovery workshops · use-case prioritisation · stakeholder management · architecture decision records · plain-language proposals and demos · Jira / Gantt planning
+### AI and agents
+- **Agent frameworks:** Google ADK (agents, tools, plugins, A2A) · LangGraph · LangChain
+- **Models:** Gemini (Vertex AI) · Claude (AWS Bedrock) · OpenAI GPT · LiteLLM gateway
+- **Patterns:** RAG · guardrails · intent routing · rules + LLM hybrids · prompt engineering
+- **Evaluation:** ground-truth test suites · precision / recall harnesses · LLM-as-judge
+
+### Enterprise agent platforms
+- **Google:** Gemini Enterprise · Vertex AI Agent Engine
+- **Salesforce:** Agentforce (Agent Builder, Prompt Builder, Flow / Apex actions) · Data 360 · Einstein Trust Layer · Testing Center
+
+### Cloud and architecture
+- **GCP:** Cloud Run · GKE · Vertex AI · BigQuery · Document AI · Cloud Build · Artifact Registry
+- **AWS:** Bedrock · S3 · DynamoDB · SageMaker
+- **Infrastructure:** Terraform · CI/CD · Workload Identity Federation · hub-and-spoke projects
+
+### Security and data governance
+- **Access:** Identity-Aware Proxy (signed JWTs) · IAM · least-privilege service accounts
+- **Data:** privacy by design · memory-only personal data · data-enablement reviews
+- **LLM safety:** prompt-injection hardening · content security policy
+
+### Engineering
+- **Languages and APIs:** Python · FastAPI · SQL · JavaScript
+- **Data:** pandas · scikit-learn · Redis / Valkey · DynamoDB · BigQuery
+- **Ops:** Docker · Kubernetes · pytest · Datadog · Sentry · OpenTelemetry
+
+### Delivery
+- **Discovery:** workshops · use-case prioritisation · data-access mapping
+- **Design:** solution proposals · architecture decision records · demos for leadership
+- **Execution:** stakeholder management · Jira · Gantt planning · weekly status reporting
 
 ## Contact
 
