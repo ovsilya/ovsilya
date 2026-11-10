@@ -1,5 +1,4 @@
-<img alt="Ilya Ovsyannikov: Forward Deployed Engineer, Solutions Architect, Applied AI. How I work with a customer, current FDE engagement, client delivery 2022-2026, what I bring, platforms." src="assets/profile-light.png#gh-light-mode-only">
-<img alt="Ilya Ovsyannikov: Forward Deployed Engineer, Solutions Architect, Applied AI. How I work with a customer, current FDE engagement, client delivery 2022-2026, what I bring, platforms." src="assets/profile-dark.png#gh-dark-mode-only">
+<img alt="Ilya Ovsyannikov: Forward Deployed Engineer, Solutions Architect, Applied AI. How I work with a customer, current FDE engagement, client delivery 2022-2026, what I bring, platforms." src="assets/profile.png">
 
 I embed with business teams and take agentic AI from discovery to a production system they own. Currently acting lead Forward Deployed Engineer in TELUS Digital's AI Accelerator FDE program.
 
