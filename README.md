@@ -8,13 +8,21 @@ I embed with business teams and take agentic AI from discovery to a production s
 
 | Project | What it is | Stack |
 |---|---|---|
-| [website-visitor-lead-check-agent](https://github.com/ovsilya/website-visitor-lead-check-agent) | **Current FDE engagement.** An agent that turns ~3,000 identified website visitors a week into a short, explainable shortlist across 127+ key accounts: rules decide and write each reason and next step, Gemini explains. Includes per-user isolation from verified IAP tokens, memory-only personal data, 13 business-editable rule lists, and hub-and-spoke target architecture diagrams. | Google ADK · Gemini (Vertex AI) · Cloud Run · IAP · pandas · pytest |
+| [website-visitor-lead-check-agent](https://github.com/ovsilya/website-visitor-lead-check-agent) | **Current FDE engagement.** An agent that turns ~3,000 identified website visitors a week into a short, explainable shortlist across 127+ key accounts: rules decide and write each reason and next step, Gemini explains. Includes per-user isolation from verified IAP tokens, memory-only personal data, 13 business-editable rule lists, and hub-and-spoke target architecture diagrams (see below). | Google ADK · Gemini (Vertex AI) · Cloud Run · IAP · pandas · pytest |
 | [ai-assistant-langgraph-backend](https://github.com/ovsilya/ai-assistant-langgraph-backend) | Conversational AI backend for a major media publisher: a LangGraph workflow per chat turn with LLM-as-judge guardrails, intent routing, grounded RAG answers with article recommendations, multi-brand personas and a GDPR deletion worker. 300+ tests, ~95% coverage. Includes architecture and LangSmith evaluation diagrams (see below). | LangGraph · FastAPI · Claude / Gemini · DynamoDB · Redis · Kubernetes |
 | [multi-agent-support-platform](https://github.com/ovsilya/multi-agent-support-platform) | A Slack-native multi-agent support platform for industrial pipeline operations, plus a Document AI pipeline that fills engineering workbooks from RFI documents, evaluated against ground truth. | Google ADK · Gemini · Cloud Run · BigQuery vector RAG · Document AI |
 | [email-qa-llm-pipeline](https://github.com/ovsilya/email-qa-llm-pipeline) | An LLM email-QA system that scans 40k+ marketing emails for 15 issue types, with parallel Bedrock workers, checkpoint/resume, versioned prompts and a precision/recall evaluation harness. | AWS Bedrock (Claude) · S3 · pandas · boto3 |
 | [llm-sentence-generation-eval](https://github.com/ovsilya/llm-sentence-generation-eval) | A dual-LLM benchmarking platform (GPT-4.1 vs Gemini 2.5) with parallel generation over CEFR-levelled data, token and cost accounting including thinking tokens, and an 8-metric NLP evaluation harness. | OpenAI · Vertex AI / Gemini · scikit-learn · NLTK |
 
-### Architecture example: AI Assistant backend
+## Architecture examples
+
+### Website-visitor lead check agent (Google Cloud)
+
+How [website-visitor-lead-check-agent](https://github.com/ovsilya/website-visitor-lead-check-agent) fits together: Google sign-in (IAP), the ADK agent and the fixed-rules lead-check tool in one Cloud Run container, memory-only personal data, and Gemini on Vertex AI writing the summary. Dashed boxes are planned for the full version. Click it for the interactive version; the repo has six more diagrams, including the hub-and-spoke target architecture.
+
+<a href="https://ovsilya.github.io/website-visitor-lead-check-agent/diagrams/architecture-overview.html"><img src="https://raw.githubusercontent.com/ovsilya/website-visitor-lead-check-agent/main/docs/diagrams/png/architecture-overview.png" width="900" alt="Lead check agent on Google Cloud: a Marketing user signs in with Google (IAP) and chats with the ADK agent on Cloud Run; the agent runs the fixed-rules lead-check tool on the weekly visitor file, with editable lists and memory-only storage, and asks Gemini on Vertex AI for the summary"></a>
+
+### AI Assistant backend (LangGraph)
 
 The architecture board for [ai-assistant-langgraph-backend](https://github.com/ovsilya/ai-assistant-langgraph-backend): the LangGraph flow (guardrails, routing, parallel retrieval, generation, bounded retry), the data layer, observability, external services and deployment. Click it for the interactive version, which also has the evaluation board (2 datasets, 14 evaluators, 3 LangSmith experiments).
 
