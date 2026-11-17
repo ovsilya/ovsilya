@@ -35,7 +35,7 @@ How [website-visitor-lead-check-agent](https://github.com/ovsilya/website-visito
 
 The architecture board for [ai-assistant-langgraph-backend](https://github.com/ovsilya/ai-assistant-langgraph-backend): the LangGraph flow (guardrails, routing, parallel retrieval, generation, bounded retry), the data layer, observability, external services and deployment. Click it for the interactive version, which also has the evaluation board (2 datasets, 14 evaluators, 3 LangSmith experiments).
 
-<a href="https://ovsilya.github.io/ai-assistant-langgraph-backend/diagrams/ai-assistant-architecture.html"><img src="https://raw.githubusercontent.com/ovsilya/ai-assistant-langgraph-backend/main/docs/diagrams/png/architecture-board.png" width="900" alt="AI Assistant architecture board: frontend widget, LangGraph backend flow, data layer, observability, graph state, external services, deployment"></a>
+<a href="https://ovsilya.github.io/ai-assistant-langgraph-backend/diagrams/ai-assistant-architecture.html"><img src="https://raw.githubusercontent.com/ovsilya/ai-assistant-langgraph-backend/main/docs/diagrams/png/architecture-board-dark.png" width="900" alt="AI Assistant architecture board: frontend widget, LangGraph backend flow, data layer, observability, graph state, external services, deployment"></a>
 
 ## Toolbox
 
