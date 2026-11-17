@@ -14,6 +14,15 @@ I embed with business teams and take agentic AI from discovery to a production s
 | [email-qa-llm-pipeline](https://github.com/ovsilya/email-qa-llm-pipeline) | An LLM email-QA system that scans 40k+ marketing emails for 15 issue types, with parallel Bedrock workers, checkpoint/resume, versioned prompts and a precision/recall evaluation harness. | AWS Bedrock (Claude) · S3 · pandas · boto3 |
 | [llm-sentence-generation-eval](https://github.com/ovsilya/llm-sentence-generation-eval) | A dual-LLM benchmarking platform (GPT-4.1 vs Gemini 2.5) with parallel generation over CEFR-levelled data, token and cost accounting including thinking tokens, and an 8-metric NLP evaluation harness. | OpenAI · Vertex AI / Gemini · scikit-learn · NLTK |
 
+**More:**
+- [AI_news](https://github.com/ovsilya/AI_news): a personal daily AI brief that collects, ranks and summarises news with Gemini.
+- [blu_baar_chatbot](https://github.com/ovsilya/blu_baar_chatbot): a bilingual chatbot API on Cloud Run with Cloud Build CI/CD.
+- [aml-assistant](https://github.com/ovsilya/aml-assistant): a compliance RAG chatbot.
+- [CBC-news-RAG](https://github.com/ovsilya/CBC-news-RAG): RAG over news articles and editorial guidelines.
+- [receipt_scanner](https://github.com/ovsilya/receipt_scanner): a serverless Document AI workflow on GCP.
+- [respondelligent_cpu](https://github.com/ovsilya/respondelligent_cpu): mBART fine-tuning and deployment.
+- [code_portfolio_examples](https://github.com/ovsilya/code_portfolio_examples): classic ML and SQL samples.
+
 ## Architecture examples
 
 ### Website-visitor lead check agent (Google Cloud)
@@ -27,15 +36,6 @@ How [website-visitor-lead-check-agent](https://github.com/ovsilya/website-visito
 The architecture board for [ai-assistant-langgraph-backend](https://github.com/ovsilya/ai-assistant-langgraph-backend): the LangGraph flow (guardrails, routing, parallel retrieval, generation, bounded retry), the data layer, observability, external services and deployment. Click it for the interactive version, which also has the evaluation board (2 datasets, 14 evaluators, 3 LangSmith experiments).
 
 <a href="https://ovsilya.github.io/ai-assistant-langgraph-backend/diagrams/ai-assistant-architecture.html"><img src="https://raw.githubusercontent.com/ovsilya/ai-assistant-langgraph-backend/main/docs/diagrams/png/architecture-board.png" width="900" alt="AI Assistant architecture board: frontend widget, LangGraph backend flow, data layer, observability, graph state, external services, deployment"></a>
-
-**More:**
-- [AI_news](https://github.com/ovsilya/AI_news): a personal daily AI brief that collects, ranks and summarises news with Gemini.
-- [blu_baar_chatbot](https://github.com/ovsilya/blu_baar_chatbot): a bilingual chatbot API on Cloud Run with Cloud Build CI/CD.
-- [aml-assistant](https://github.com/ovsilya/aml-assistant): a compliance RAG chatbot.
-- [CBC-news-RAG](https://github.com/ovsilya/CBC-news-RAG): RAG over news articles and editorial guidelines.
-- [receipt_scanner](https://github.com/ovsilya/receipt_scanner): a serverless Document AI workflow on GCP.
-- [respondelligent_cpu](https://github.com/ovsilya/respondelligent_cpu): mBART fine-tuning and deployment.
-- [code_portfolio_examples](https://github.com/ovsilya/code_portfolio_examples): classic ML and SQL samples.
 
 ## Toolbox
 
